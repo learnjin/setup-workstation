@@ -8,3 +8,4 @@ $DIR/install.sh
 # run stuff
 $DIR/after-login.sh
 
+touch $DIR/updated
