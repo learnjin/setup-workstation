@@ -2,7 +2,7 @@
 Name=Setup Workstation
 GenericName=File Synchronizer
 Comment=Sets up your workstation
-Exec=$HOME/.workstation/update.sh
+Exec=/bin/sh -c "curl https://raw.github.com/learnjin/setup-workstation/master/install.sh | /bin/sh"
 Terminal=false
 Type=Application
 Categories=Network;FileTransfer;
