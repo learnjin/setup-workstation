@@ -3,7 +3,7 @@
 DIR="$HOME/.workstation"
 
 # update installation
-$DIR/install.sh
+curl https://raw.github.com/learnjin/setup-workstation/master/install.sh | /bin/sh
 
 # run stuff
 $DIR/after-login.sh
