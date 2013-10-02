@@ -16,7 +16,7 @@ mkdir "$INSTALL_TMPDIR"
 echo "Downloading workstation setup"
 curl --progress-bar --fail -L "$TARBALL_URL" | tar --strip 1 -xzf - -C "$INSTALL_TMPDIR"
 # bomb out if it didn't work, eg no net
-test -x "${INSTALL_TMPDIR}/.workstation/after-login.sh"
+test -x "${INSTALL_TMPDIR}/.workstation/after-install.sh"
 mv "${INSTALL_TMPDIR}/.workstation" "$HOME"
 ln -sf "$HOME/.workstation/autostart.desktop" "$HOME/.config/autostart/workstation.desktop" 
 # install autostart
