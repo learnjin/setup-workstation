@@ -23,11 +23,13 @@ ln -sf "$HOME/.workstation/autostart.desktop" "$HOME/.config/autostart/workstati
 
 rm -rf "${INSTALL_TMPDIR}"
 # just double-checking :)
-test -x "$HOME/.workstation/after-login.sh"
-
+test -x "$HOME/.workstation/after-install.sh"
 
 echo
 echo "Workstation has been setup in your home directory (~/.workstation)."
+echo
+
+"$HOME/.workstation/after-install.sh"
 
 
 
