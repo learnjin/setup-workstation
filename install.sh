@@ -18,7 +18,7 @@ curl --progress-bar --fail -L "$TARBALL_URL" | tar --strip 1 -xzf - -C "$INSTALL
 # bomb out if it didn't work, eg no net
 test -x "${INSTALL_TMPDIR}/.workstation/after-login.sh"
 mv "${INSTALL_TMPDIR}/.workstation" "$HOME"
-ln -sf "$HOME/.config/autostart/workstation.desktop" "$HOME/.workstation/autostart.desktop"
+ln -sf "$HOME/.workstation/autostart.desktop" "$HOME/.config/autostart/workstation.desktop" 
 # install autostart
 
 rm -rf "${INSTALL_TMPDIR}"
