@@ -29,7 +29,8 @@ echo
 echo "Workstation has been setup in your home directory (~/.workstation)."
 echo
 
-"$HOME/.workstation/after-install.sh"
+$HOME/.workstation/after-install.sh
+
 
 
 
